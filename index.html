@@ -1,22 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Steven Ricky Lie - Portfolio</title>
+    <title>Steven Ricky Lie - Fullstack Developer & Data Scientist</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <!-- Theme Toggle -->
-    <div class="theme-toggle" id="themeToggle">
-        <i class="fas fa-moon"></i>
-    </div>
-
     <!-- Premium Preloader -->
     <div class="preloader" id="preloader">
         <div class="preloader-content">
@@ -32,6 +26,11 @@
 
     <!-- Particle Background -->
     <div id="particles-js"></div>
+
+    <!-- Theme Toggle -->
+    <div class="theme-toggle" id="themeToggle">
+        <i class="fas fa-moon"></i>
+    </div>
 
     <header>
         <div class="header-container">
@@ -56,24 +55,38 @@
     <section id="home" class="home">
         <div class="home-container">
             <div class="home-content" data-aos="fade-up" data-aos-duration="1000">
+                <div class="greeting">
+                    <span>Hello, I'm</span>
+                </div>
                 <div class="text-animation">
-                    <h1>Hi, I'm <span class="typing-text"></span></h1>
+                    <h1><span class="typing-text"></span></h1>
                 </div>
                 <h3>Fullstack Developer & Data Scientist</h3>
                 <p>Passionate Computer Science student specializing in creating digital solutions that bridge technology and business needs. With expertise in fullstack development, data analysis, and mobile applications.</p>
                 <div class="home-buttons">
-                    <a href="#projects" class="btn btn-primary">View My Work</a>
-                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    <a href="#projects" class="btn btn-primary">
+                        <span>View My Work</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <span>Get In Touch</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </a>
                 </div>
-                <div class="scroll-indicator">
-                    <span>Scroll Down</span>
-                    <div class="scroll-arrow"></div>
+                <div class="social-links">
+                    <a href="https://wa.me/628872549474" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.linkedin.com/in/steven-ricky-1a5a18311" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/stevenrickyy" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://github.com/stevericky" target="_blank"><i class="fab fa-github"></i></a>
                 </div>
             </div>
             <div class="home-visual" data-aos="fade-left" data-aos-duration="1000">
                 <div class="floating-card">
                     <div class="card-content">
-                        <img src="main.jpg" alt="Steven Ricky Lie" class="profile-image">
+                        <div class="image-container">
+                            <img src="main.jpg" alt="Steven Ricky Lie" class="profile-image">
+                            <div class="image-overlay"></div>
+                        </div>
                         <div class="card-stats">
                             <div class="stat">
                                 <h4>25+</h4>
@@ -89,8 +102,17 @@
                             </div>
                         </div>
                     </div>
+                    <div class="card-decoration">
+                        <div class="decoration-item"></div>
+                        <div class="decoration-item"></div>
+                        <div class="decoration-item"></div>
+                    </div>
                 </div>
             </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll Down</span>
+            <div class="scroll-arrow"></div>
         </div>
     </section>
 
@@ -105,22 +127,28 @@
                     
                     <div class="about-highlights">
                         <div class="highlight">
-                            <i class="fas fa-rocket"></i>
-                            <div>
+                            <div class="highlight-icon">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                            <div class="highlight-content">
                                 <h4>Fast Learner</h4>
                                 <p>Quick to adapt to new technologies and methodologies</p>
                             </div>
                         </div>
                         <div class="highlight">
-                            <i class="fas fa-puzzle-piece"></i>
-                            <div>
+                            <div class="highlight-icon">
+                                <i class="fas fa-puzzle-piece"></i>
+                            </div>
+                            <div class="highlight-content">
                                 <h4>Problem Solver</h4>
                                 <p>Analytical approach to complex technical challenges</p>
                             </div>
                         </div>
                         <div class="highlight">
-                            <i class="fas fa-users"></i>
-                            <div>
+                            <div class="highlight-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="highlight-content">
                                 <h4>Team Player</h4>
                                 <p>Excellent collaboration and communication skills</p>
                             </div>
@@ -131,206 +159,222 @@
                         <a href="cv-steven-ricky.pdf" download class="btn btn-primary">
                             <i class="fas fa-download"></i> Download CV
                         </a>
-                        <a href="#contact" class="btn btn-secondary">Hire Me</a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <i class="fas fa-handshake"></i> Hire Me
+                        </a>
                     </div>
                 </div>
-               <div class="about-visual" data-aos="fade-left">
-    <div class="skill-bubbles">
-        <div class="bubble" style="--i:1">
-            <i class="fab fa-html5"></i>
-            <span>HTML</span>
-        </div>
-        <div class="bubble" style="--i:2">
-            <i class="fab fa-css3-alt"></i>
-            <span>CSS</span>
-        </div>
-        <div class="bubble" style="--i:3">
-            <i class="fab fa-js"></i>
-            <span>JavaScript</span>
-        </div>
-        <div class="bubble" style="--i:4">
-            <i class="fab fa-react"></i>
-            <span>React</span>
-        </div>
-        <div class="bubble" style="--i:5">
-            <i class="fab fa-node-js"></i>
-            <span>Node.js</span>
-        </div>
-        <div class="bubble" style="--i:6">
-            <i class="fab fa-php"></i>
-            <span>PHP</span>
-        </div>
-        <div class="bubble" style="--i:7">
-            <i class="fas fa-database"></i>
-            <span>MySQL</span>
-        </div>
-        <div class="bubble" style="--i:8">
-            <i class="fab fa-python"></i>
-            <span>Python</span>
-        </div>
-        <div class="bubble" style="--i:9">
-            <i class="fas fa-square-root-alt"></i>
-            <span>MATLAB</span>
-        </div>
-        <div class="bubble" style="--i:10">
-            <i class="fas fa-code"></i>
-            <span>C / C++</span>
-        </div>
-        <div class="bubble" style="--i:11">
-            <i class="fab fa-java"></i>
-            <span>Java</span>
-        </div>
-        <div class="bubble" style="--i:12">
-            <i class="fas fa-mobile"></i>
-            <span>React Native</span>
-        </div>
-    </div>
-</div>
-
+                <div class="about-visual" data-aos="fade-left">
+                    <div class="skill-bubbles">
+                        <div class="bubble" style="--i:1">
+                            <i class="fab fa-html5"></i>
+                            <span>HTML</span>
+                        </div>
+                        <div class="bubble" style="--i:2">
+                            <i class="fab fa-css3-alt"></i>
+                            <span>CSS</span>
+                        </div>
+                        <div class="bubble" style="--i:3">
+                            <i class="fab fa-js"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="bubble" style="--i:4">
+                            <i class="fab fa-react"></i>
+                            <span>React</span>
+                        </div>
+                        <div class="bubble" style="--i:5">
+                            <i class="fab fa-node-js"></i>
+                            <span>Node.js</span>
+                        </div>
+                        <div class="bubble" style="--i:6">
+                            <i class="fab fa-php"></i>
+                            <span>PHP</span>
+                        </div>
+                        <div class="bubble" style="--i:7">
+                            <i class="fas fa-database"></i>
+                            <span>MySQL</span>
+                        </div>
+                        <div class="bubble" style="--i:8">
+                            <i class="fab fa-python"></i>
+                            <span>Python</span>
+                        </div>
+                        <div class="bubble" style="--i:9">
+                            <i class="fas fa-square-root-alt"></i>
+                            <span>MATLAB</span>
+                        </div>
+                        <div class="bubble" style="--i:10">
+                            <i class="fas fa-code"></i>
+                            <span>C / C++</span>
+                        </div>
+                        <div class="bubble" style="--i:11">
+                            <i class="fab fa-java"></i>
+                            <span>Java</span>
+                        </div>
+                        <div class="bubble" style="--i:12">
+                            <i class="fas fa-mobile"></i>
+                            <span>React Native</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-   <!-- Skills Section -->
-<section id="skills" class="skills">
-    <div class="container">
-        <h2 class="section-title" data-aos="fade-up">Technical Skills</h2>
-        <div class="skills-container">
-            
-            <!-- Frontend -->
-            <div class="skills-category" data-aos="fade-right">
-                <h3><i class="fas fa-laptop-code"></i> Frontend Development</h3>
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Technical Skills</h2>
+            <div class="skills-container">
                 
-                <div class="skill-item">
-                    <div class="skill-info">
-                        <span>HTML / CSS</span>
-                        <span>95%</span>
+                <!-- Frontend -->
+                <div class="skills-category" data-aos="fade-right">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3>Frontend Development</h3>
                     </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" data-width="95"></div>
+                    
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>HTML / CSS</span>
+                            <span>95%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="95"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>JavaScript / TypeScript</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="90"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>React.js</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="85"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Bootstrap / Tailwind CSS</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="80"></div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="skill-item">
-                    <div class="skill-info">
-                        <span>JavaScript / TypeScript</span>
-                        <span>90%</span>
+                <!-- Backend -->
+                <div class="skills-category" data-aos="fade-up">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <h3>Backend Development</h3>
                     </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" data-width="90"></div>
+
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Node.js</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="75"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>PHP</span>
+                            <span>78%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="78"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>MySQL / SQL</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="85"></div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="skill-item">
-                    <div class="skill-info">
-                        <span>React.js</span>
-                        <span>85%</span>
+                <!-- Data Science & Tools -->
+                <div class="skills-category" data-aos="fade-left">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Data Science & Tools</h3>
                     </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" data-width="85"></div>
-                    </div>
-                </div>
 
-                <div class="skill-item">
-                    <div class="skill-info">
-                        <span>Bootstrap / Tailwind CSS</span>
-                        <span>80%</span>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Python (Pandas, NumPy, Scikit-learn)</span>
+                            <span>82%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="82"></div>
+                        </div>
                     </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" data-width="80"></div>
+
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>MATLAB</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="80"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Data Analysis & Visualization</span>
+                            <span>78%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="78"></div>
+                        </div>
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
 
-            <!-- Backend -->
-            <div class="skills-category" data-aos="fade-up">
-                <h3><i class="fas fa-server"></i> Backend Development</h3>
-
-                <div class="skill-item">
-                    <div class="skill-info">
-                        <span>Node.js</span>
-                        <span>75%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" data-width="75"></div>
-                    </div>
-                </div>
-
-                <div class="skill-item">
-                    <div class="skill-info">
-                        <span>PHP</span>
-                        <span>78%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" data-width="78"></div>
-                    </div>
-                </div>
-
-                <div class="skill-item">
-                    <div class="skill-info">
-                        <span>MySQL / SQL</span>
-                        <span>85%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" data-width="85"></div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Data Science & Tools -->
-            <div class="skills-category" data-aos="fade-left">
-                <h3><i class="fas fa-chart-line"></i> Data Science & Tools</h3>
-
-                <div class="skill-item">
-                    <div class="skill-info">
-                        <span>Python (Pandas, NumPy, Scikit-learn)</span>
-                        <span>82%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" data-width="82"></div>
-                    </div>
-                </div>
-
-                <div class="skill-item">
-                    <div class="skill-info">
-                        <span>MATLAB</span>
-                        <span>80%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" data-width="80"></div>
-                    </div>
-                </div>
-
-                <div class="skill-item">
-                    <div class="skill-info">
-                        <span>Data Analysis & Visualization</span>
-                        <span>78%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" data-width="78"></div>
-                    </div>
-                </div>
-            </div>
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+    <div class="container">
+        <h2 class="section-title" data-aos="fade-up">Featured Projects</h2>
+        <div class="projects-filter" data-aos="fade-up" data-aos-delay="100">
+            <button class="filter-btn active" data-filter="all">All Projects</button>
+            <button class="filter-btn" data-filter="web">Web Development</button>
+            <button class="filter-btn" data-filter="mobile">Mobile Apps</button>
+            <button class="filter-btn" data-filter="data">Data Science</button>
+        </div>
+        <div class="projects-grid">
+            <!-- Project cards will be populated by JavaScript -->
         </div>
     </div>
 </section>
 
-
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-title" data-aos="fade-up">Featured Projects</h2>
-            <div class="projects-filter">
-                <button class="filter-btn active" data-filter="all">All Projects</button>
-                <button class="filter-btn" data-filter="web">Web Development</button>
-                <button class="filter-btn" data-filter="mobile">Mobile Apps</button>
-                <button class="filter-btn" data-filter="data">Data Science</button>
-            </div>
-            <div class="projects-grid">
-                <!-- Project cards will be populated by JavaScript -->
-            </div>
-        </div>
-    </section>
 
     <!-- Project Modal -->
     <div id="projectModal" class="modal">
@@ -349,8 +393,6 @@
             <div class="timeline">
                 <div class="timeline-item" data-aos="fade-right">
                     <div class="timeline-dot"></div>
-                    <div class="timeline-item" data-aos="fade-right">
-                    <div class="timeline-dot"></div>
                     <div class="timeline-content">
                         <span class="timeline-date">2022 - 2023</span>
                         <h3>Bank Index - Part Time Teller</h3>
@@ -362,6 +404,8 @@
                         </ul>
                     </div>
                 </div>
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-dot"></div>
                     <div class="timeline-content">
                         <span class="timeline-date">2023 - Present</span>
                         <h3>Universitas Tarumanagara</h3>
@@ -373,7 +417,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="timeline-item" data-aos="fade-left">
+                <div class="timeline-item" data-aos="fade-right">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
                         <span class="timeline-date">2023 - Present</span>
@@ -386,12 +430,11 @@
                         </ul>
                     </div>
                 </div>
-                
             </div>
         </div>
     </section>
 
-    <!-- Contact Section - SIMPLIFIED -->
+    <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
             <h2 class="section-title" data-aos="fade-up">Get In Touch</h2>
@@ -404,7 +447,7 @@
                     <i class="fab fa-whatsapp"></i>
                     <span>Chat on WhatsApp</span>
                 </a>
-                <a href="mailto:steven.ricky@example.com" class="contact-action-btn email">
+                <a href="mailto:stevericky777@gmail.com" class="contact-action-btn email">
                     <i class="fas fa-envelope"></i>
                     <span>Send an Email</span>
                 </a>
@@ -485,7 +528,7 @@
                         <a href="https://www.instagram.com/stevenrickyy" target="_blank">
                             <i class="fab fa-instagram"></i>
                         </a>
-                        <a href="mailto:steven.ricky@example.com">
+                        <a href="mailto:stevericky777@gmail.com">
                             <i class="fas fa-envelope"></i>
                         </a>
                     </div>

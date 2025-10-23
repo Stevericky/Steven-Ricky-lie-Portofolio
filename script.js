@@ -1,4 +1,4 @@
-// Premium Portfolio JavaScript
+// script.js - Enhanced Version
 
 // Initialize AOS (Animate On Scroll)
 AOS.init({
@@ -309,15 +309,16 @@ const projects = [
             results: "Reduced administrative workload by 30% and increased member retention by 15%."
         }
     },
-    {
+     {
         id: 6,
         title: "Skin Classification Research",
         category: "data",
         description: "Research project on skin classification using grayscale, PCA, RGB, and GLCM with MATLAB for image processing.",
         technologies: ["MATLAB", "Image Processing", "Machine Learning", "Statistical Analysis"],
-        image: "https://via.placeholder.com/400x250",
+        image: "images/matlab.png",
         liveUrl: null,
         githubUrl: null,
+        hasMatlabVisualization: true,
         details: {
             challenge: "Develop accurate skin classification algorithms using various image processing techniques.",
             solution: "Implemented and compared multiple classification methods including grayscale conversion, PCA, RGB analysis, and GLCM texture features.",
@@ -326,6 +327,7 @@ const projects = [
         }
     }
 ];
+
 
 // Populate Projects Grid
 const projectsGrid = document.querySelector('.projects-grid');
